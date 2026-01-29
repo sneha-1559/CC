@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>BookNest | Book Renting Platform</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <h1>📚 BookNest</h1>
+    <span>Rent • Read • Return</span>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Books You Love, At Prices You’ll Love</h2>
+    <p>Rent books easily and affordably</p>
+  </section>
+
+  <!-- BOOKS -->
+  <section class="books-section">
+    <h2 class="section-title">Available Books</h2>
+    <div class="books" id="bookList"></div>
+  </section>
+
+  <!-- RENT MODAL -->
+  <div class="modal" id="rentModal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">×</span>
+      <h2 id="bookTitle"></h2>
+
+      <label>From Date</label>
+      <input type="date" id="fromDate">
+
+      <label>To Date</label>
+      <input type="date" id="toDate">
+
+      <p class="price">Total Price: ₹<span id="totalPrice">0</span></p>
+
+      <button onclick="confirmRent()">Confirm Rent</button>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <footer class="contact">
+    <h2>📞 Contact Us</h2>
+    <p><strong>Email:</strong> support@booknest.com</p>
+    <p><strong>Phone:</strong> +91 98765 43210</p>
+    <p><strong>Address:</strong> BookNest, FC Road, Pune, Maharashtra</p>
+    <p class="copyright">© 2026 BookNest | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
